@@ -13,7 +13,17 @@ This repo constitutes the frontend and its deployment of Lenor.
    $ pip install -r requirements.txt
    ```
 
-2. Run the app
+2. Create a .env file and add your openAI API key.
+[HELP](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key)
+
+3. Reinstall the openai module.
+
+   ```
+   pip uninstall openai
+   pip install openai
+   ```
+   
+4. Run the app
 
    ```
    $ streamlit run streamlit_app.py
