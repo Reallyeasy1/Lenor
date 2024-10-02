@@ -15,7 +15,7 @@ This repo constitutes the frontend and its deployment of Lenor.
 
 2. Create a .env file and add your openAI API key.
 
-   [HELP](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key)
+   [IF YOU NEED HELP](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key)
 
 3. Reinstall the openai module.
 
