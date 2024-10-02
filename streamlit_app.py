@@ -1,5 +1,9 @@
 import streamlit as st
+from dotenv import load_dotenv
+import os
 from openai import OpenAI
+
+load_dotenv()
 
 # Show title and description.
 st.title("💬 Chatbot")
@@ -9,10 +13,14 @@ st.write(
     "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
 
+# Obtain the OpenAI API key from the .env file
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
 # Ask user for their OpenAI API key via `st.text_input`.
 # Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
 # via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = st.text_input("OpenAI API Key", type="password")
+if not openai_api_key:
+    openai_api_key = st.text_input("OpenAI API Key", type="password")
 if not openai_api_key:
     st.info("Please add your OpenAI API key to continue.", icon="🗝️")
 else:
