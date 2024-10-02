@@ -13,7 +13,7 @@ This repo constitutes the frontend and its deployment of Lenor.
    $ pip install -r requirements.txt
    ```
 
-2. Create a .env file and add your openAI API key.
+2. Create a .env file and add your openAI API key. Refer to env.example for reference.
 
    [IF YOU NEED HELP](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key)
 
