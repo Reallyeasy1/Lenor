@@ -1,6 +1,7 @@
-# 💬 Chatbot template
+# 💬 Lenor FrontEnd
 
 A simple Streamlit app that shows how to build a chatbot using OpenAI's GPT-3.5.
+This repo constitutes the frontend and its deployment of Lenor.
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-template.streamlit.app/)
 
